@@ -1,4 +1,5 @@
 import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
+
 import { RootState } from "../../store";
 import { IArticleState, SearchingArticleResult } from "../../types";
 import { fetchArticles } from "./articleAPI";

@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+
 import FlexRowBox from "../../shared/FlexRowBox";
 
 const Wrapper = styled(FlexRowBox)`
@@ -8,10 +9,6 @@ const Wrapper = styled(FlexRowBox)`
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-
-  > * {
-    width: 100%;
-  }
 `;
 
 const Header: React.FC<{ children: React.ReactNode }> = ({ children }) => {
