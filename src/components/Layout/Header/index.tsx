@@ -9,10 +9,6 @@ const Wrapper = styled(FlexRowBox)`
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-
-  > * {
-    width: 100%;
-  }
 `;
 
 const Header: React.FC<{ children: React.ReactNode }> = ({ children }) => {
