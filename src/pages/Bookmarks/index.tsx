@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { useAppSelector } from "../../store/hooks";
 import { selectBookmarked } from "../../features/article/articleSlice";
 
-import Article from "../../components/Article";
+import Article from "../Articles/Article";
 import FlexColumnBox from "../../components/shared/FlexColumnBox";
 
 const Wrapper = styled(FlexColumnBox)`

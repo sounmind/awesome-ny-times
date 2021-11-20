@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import styled from "styled-components";
 
-import { toggleBookmark } from "../../features/article/articleSlice";
-import { IArticle } from "../../types";
+import { toggleBookmark } from "../../../features/article/articleSlice";
+import { IArticle } from "../../../types";
 
-import Modal from "../Modal";
-import Button from "../shared/Button";
-import FlexRowBox from "../shared/FlexRowBox";
+import Modal from "../../../components/Modal";
+import Button from "../../../components/shared/Button";
+import FlexRowBox from "../../../components/shared/FlexRowBox";
 
 const Wrapper = styled(FlexRowBox)`
   width: 100%;

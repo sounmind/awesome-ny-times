@@ -10,7 +10,7 @@ import {
   selectStatus,
 } from "../../features/article/articleSlice";
 
-import Article from "../../components/Article";
+import Article from "./Article";
 
 import Button from "../../components/shared/Button";
 import Loading from "../../components/shared/Loading";
