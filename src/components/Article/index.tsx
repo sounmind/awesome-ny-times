@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import styled from "styled-components";
+
 import { toggleBookmark } from "../../features/article/articleSlice";
 import { IArticle } from "../../types";
+
 import Modal from "../Modal";
 import Button from "../shared/Button";
 import FlexRowBox from "../shared/FlexRowBox";

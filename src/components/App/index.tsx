@@ -1,10 +1,13 @@
 import React, { ChangeEventHandler, useState } from "react";
-import Header from "../Layout/Header";
-import Layout from "../Layout";
+import { useDispatch } from "react-redux";
+
+import { searchingArticlesAsync } from "../../features/article/articleSlice";
+
 import Articles from "../../pages/Articles";
 import Bookmarks from "../../pages/Bookmarks";
-import { useDispatch } from "react-redux";
-import { searchingArticlesAsync } from "../../features/article/articleSlice";
+
+import Header from "../Layout/Header";
+import Layout from "../Layout";
 import Button from "../shared/Button";
 
 const App: React.FC = () => {
@@ -37,15 +40,12 @@ const App: React.FC = () => {
           onChange={handleChangeSearchingKeyword}
           placeholder="검색어를 입력하세요"
         />
-
         <Button width="20%" name="search" onClick={handleClickSearch}>
           검색
         </Button>
-
         <Button width="50%" name="article" onClick={handleClickView}>
           기사보기
         </Button>
-
         <Button width="50%" name="bookmark" onClick={handleClickView}>
           즐겨찾기
         </Button>

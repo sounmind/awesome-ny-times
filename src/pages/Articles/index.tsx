@@ -1,3 +1,6 @@
+import { useDispatch } from "react-redux";
+import styled from "styled-components";
+
 import { useAppSelector } from "../../store/hooks";
 import {
   searchingArticlesAsync,
@@ -6,13 +9,13 @@ import {
   selectPage,
   selectStatus,
 } from "../../features/article/articleSlice";
+
 import Article from "../../components/Article";
-import FlexColumnBox from "../../components/shared/FlexColumnBox";
-import styled from "styled-components";
+
 import Button from "../../components/shared/Button";
-import { useDispatch } from "react-redux";
-import ErrorMessage from "../../components/shared/ErrorMessage";
 import Loading from "../../components/shared/Loading";
+import ErrorMessage from "../../components/shared/ErrorMessage";
+import FlexColumnBox from "../../components/shared/FlexColumnBox";
 
 const Wrapper = styled(FlexColumnBox)`
   align-items: center;
